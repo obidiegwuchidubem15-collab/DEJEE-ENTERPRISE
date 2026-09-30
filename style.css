@@ -1,0 +1,51 @@
+body {
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding-top: 100px;
+}
+
+.box {
+    padding: 20px;
+    border: 1px solid rgb(252, 249, 249);
+    border-radius: 10px;
+    background-color: rgb(248, 10, 10);
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 4px 10px rgb(53, 52, 52);
+
+
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.box h2 {
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+}
+
+.box p {
+    font-weight: bold;
+    font-style:inherit;
+    color: rgb(253, 252, 252);
+}
+
+i {
+    color: rgb(255, 254, 254);
+    font-size: 30px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateX(0) scale(1);
+    }
+
+    
+    100% {
+        opacity: 1;
+        transform: translateX(600px) scale(1.5);
+    }
+}
